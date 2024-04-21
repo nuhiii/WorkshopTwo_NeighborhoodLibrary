@@ -9,10 +9,37 @@ public class Book {
     private String checkedOutTo;
 
     //Constructor
+    public Book(int id, String isbn, String title) {
+        this.id = id;
+        this.isbn = isbn;
+        this.title = title;
+    }
 
     //Setters
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     //Getters
+    public int getId() {
+        return id;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
 
     //class methods to check out / check in
     public void checkOut(String name){
