@@ -1,14 +1,14 @@
 package com.ps;
 
 public class Book {
-    //class member variables
+    // class member variables
     private int id;
     private String isbn;
     private String title;
     private boolean isCheckedOut;
     private String checkedOutTo;
 
-    //Constructor
+    // Constructor
     public Book(int id, String isbn, String title) {
         this.id = id;
         this.isbn = isbn;
@@ -17,7 +17,7 @@ public class Book {
         this.checkedOutTo = "";
     }
 
-    //Setters
+    // Setters
     public void setId(int id) {
         this.id = id;
     }
@@ -30,7 +30,7 @@ public class Book {
         this.title = title;
     }
 
-    //Getters
+    // Getters
     public int getId() {
         return id;
     }
@@ -43,9 +43,8 @@ public class Book {
         return title;
     }
 
-    //class methods to check out / check in
+    // class methods to check out / check in
     public void checkOut(String name){
-
     }
     public void checkIn(){
 
