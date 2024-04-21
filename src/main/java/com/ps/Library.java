@@ -41,7 +41,7 @@ public class Library {
         System.out.println("These are the list of available books:");
         for (Book book: collection){
             if (!book.isCheckedOut()){
-                System.out.println(book.getId() + ", " + book.getIsbn() + ", " + book.getTitle());
+                System.out.println("ID: " + book.getId() + ", ISBN: " + book.getIsbn() + ", Title: " + book.getTitle());
             }
         }
     }
@@ -50,7 +50,7 @@ public class Library {
         System.out.println("These are the list of checked out books:");
         for (Book book: collection){
             if (book.isCheckedOut()){
-                System.out.println(book.getId() + ", " + book.getIsbn() + ", " + book.getTitle());
+                System.out.println("ID: " + book.getId() + ", ISBN: " + book.getIsbn() + ", Title: " + book.getTitle());
             }
         }
     }
