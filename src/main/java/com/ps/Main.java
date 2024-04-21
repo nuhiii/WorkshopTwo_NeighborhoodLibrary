@@ -1,5 +1,6 @@
 package com.ps;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +22,7 @@ public class Main {
             switch (option) {
                 case 1:
                     library.showAvailableBooks();
+                    checkOutScreen();
                     break;
                 case 2:
                     library.showCheckedOutBooks();
@@ -33,5 +35,31 @@ public class Main {
                     break;
             }
         } while (option != 3);
+    }
+
+    public static void checkOutScreen(){
+        Scanner scanner = new Scanner(System.in);
+        String choice;
+        String name;
+        int id;
+        do {
+            System.out.println("Enter C to check out a book by ID or X to exit to home screen: ");
+            choice = scanner.nextLine();
+            switch (choice) {
+                case "C":
+                    System.out.println("Enter your name: ");
+                    name = scanner.next();
+                    System.out.println("Enter ID of book you want to check out: ");
+                    id = scanner.nextInt();
+                    scanner.nextLine();
+                    library.getBook(id, name);
+                    break;
+                case "X":
+                    homeScreen();
+                    break;
+                default:
+                    System.out.println("Invalid Choice. Try Again.");
+            }
+        } while (!choice.equals("X"));
     }
 }

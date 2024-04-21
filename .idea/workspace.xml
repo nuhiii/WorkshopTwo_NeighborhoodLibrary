@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4940409e-30af-4cc0-8111-0592674bf01c" name="Changes" comment="update menu to loop until exit">
+    <list default="true" id="4940409e-30af-4cc0-8111-0592674bf01c" name="Changes" comment="create separate method for displaying home screen menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ps/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ps/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ps/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ps/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713731788980</updated>
       <workItem from="1713731790169" duration="90000" />
-      <workItem from="1713731885246" duration="5350000" />
+      <workItem from="1713731885246" duration="7315000" />
     </task>
     <task id="LOCAL-00001" summary="set up template for book class">
       <option name="closed" value="true" />
@@ -161,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713737586176</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="create separate method for displaying home screen menu">
+      <option name="closed" value="true" />
+      <created>1713737861649</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713737861649</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +202,7 @@
     <MESSAGE value="add two more getters, for checked out status, and complete available books method" />
     <MESSAGE value="complete show checked out books method" />
     <MESSAGE value="update menu to loop until exit" />
-    <option name="LAST_COMMIT_MESSAGE" value="update menu to loop until exit" />
+    <MESSAGE value="create separate method for displaying home screen menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="create separate method for displaying home screen menu" />
   </component>
 </project>

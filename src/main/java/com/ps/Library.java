@@ -50,7 +50,15 @@ public class Library {
         System.out.println("These are the list of checked out books:");
         for (Book book: collection){
             if (book.isCheckedOut()){
-                System.out.println("ID: " + book.getId() + ", ISBN: " + book.getIsbn() + ", Title: " + book.getTitle());
+                System.out.println("ID: " + book.getId() + ", ISBN: " + book.getIsbn() + ", Title: " + book.getTitle() + ", Name: " + book.getCheckedOutTo());
+            }
+        }
+    }
+
+    public void getBook(int id, String name){
+        for (Book book: collection){
+            if (id == book.getId()){
+                book.checkOut(name);
             }
         }
     }
