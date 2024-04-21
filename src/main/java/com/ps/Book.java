@@ -43,6 +43,14 @@ public class Book {
         return title;
     }
 
+    public boolean isCheckedOut() {
+        return isCheckedOut;
+    }
+
+    public String getCheckedOutTo() {
+        return checkedOutTo;
+    }
+
     // class methods to check out / check in
     public void checkOut(String name){
         if (!isCheckedOut){
