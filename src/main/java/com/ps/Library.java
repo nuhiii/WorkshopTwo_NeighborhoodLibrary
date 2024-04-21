@@ -36,4 +36,12 @@ public class Library {
         collection.add(new Book(19, "9780140187398", "One Hundred Years of Solitude"));
         collection.add(new Book(20, "9780679745587", "Beloved"));
     }
+
+    public void showAvailableBooks(){
+
+    }
+
+    public void showCheckedOutBooks(){
+
+    }
 }
