@@ -3,8 +3,11 @@ package com.ps;
 import java.util.Scanner;
 
 public class Main {
+    private static Library library = new Library();
     public static void main(String[] args){
-        Library library = new Library();
+        homeScreen();
+    }
+    public static void homeScreen(){
         int option;
         do {
             System.out.println("Welcome to the Neighborhood Library System!");
