@@ -45,8 +45,17 @@ public class Book {
 
     // class methods to check out / check in
     public void checkOut(String name){
-    }
-    public void checkIn(){
 
+    }
+
+    public void checkIn(){
+        if (isCheckedOut){
+            isCheckedOut = false;
+            checkedOutTo = "";
+            System.out.println("The book, " + title + ", has successfully been checked in.");
+        }
+        else{
+            System.out.println("The book, " + title + ", is NOT checked out.");
+        }
     }
 }
