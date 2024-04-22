@@ -3,7 +3,10 @@ package com.ps;
 import java.util.Scanner;
 
 public class Screen {
+    // library collection of individual books
     private final Library library = new Library();
+
+    // display home screen
     public void homeScreen(){
         Scanner scanner = new Scanner(System.in);
         int option;
@@ -34,6 +37,7 @@ public class Screen {
         } while (option != 3);
     }
 
+    // show available books and check out option
     public void checkOutScreen(){
         Scanner scanner = new Scanner(System.in);
         String choice;
@@ -59,6 +63,7 @@ public class Screen {
         } while (true);
     }
 
+    // show checked out books and check in option
     public void checkInScreen(){
         Scanner scanner = new Scanner(System.in);
         String choice;

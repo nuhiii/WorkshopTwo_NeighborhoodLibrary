@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Library {
     // dynamic array to store books
-    private List<Book> collection;
+    private final List<Book> collection;
 
     // Constructor
     public Library(){
@@ -37,6 +37,7 @@ public class Library {
         collection.add(new Book(20, "9780679745587", "Beloved"));
     }
 
+    // show books
     public void showAvailableBooks(){
         System.out.println("These are the list of available books:");
         for (Book book: collection){
@@ -55,6 +56,7 @@ public class Library {
         }
     }
 
+    // retrieve book by ID
     public void getBook(int id, String name){
         for (Book book: collection){
             if (id == book.getId()){
