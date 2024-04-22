@@ -56,8 +56,7 @@ public class Main {
                     library.getBook(id, name);
                     break;
                 case "X":
-                    homeScreen();
-                    break;
+                    return;
                 default:
                     System.out.println("Invalid Choice. Try Again.");
             }
@@ -79,8 +78,7 @@ public class Main {
                     library.returnBook(id);
                     break;
                 case "X":
-                    homeScreen();
-                    break;
+                    return;
                 default:
                     System.out.println("Invalid Choice. Try Again.");
             }
