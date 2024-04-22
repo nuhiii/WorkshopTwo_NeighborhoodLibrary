@@ -7,4 +7,4 @@
 
 # Interesting Code
 - new ArrayList<>() and while (true) 
-The above code snippets are interesting because first, instead of a fixed array, I am using a dynamic array, which allows the option to resize the library, and second, it is possible to create a while loop that always returns true, as long as there is a return statement that cuts it, to return to the previous screen (here we have to be careful of further nesting the method call that returns to the previous screen because this can cause infinite loop errors). 
+- The above code snippets are interesting because first, instead of a fixed array, I am using a dynamic array, which allows the option to resize the library, and second, it is possible to create a while loop that always returns true, as long as there is a return statement that cuts it, to return to the previous screen (here we have to be careful of further nesting the method call that returns to the previous screen because this can cause infinite loop errors). 
