@@ -9,6 +9,7 @@ public class Main {
         homeScreen();
     }
     public static void homeScreen(){
+        Scanner scanner = new Scanner(System.in);
         int option;
         do {
             System.out.println("Welcome to the Neighborhood Library System!");
@@ -17,7 +18,6 @@ public class Main {
             System.out.println("2. Show Checked Out Books");
             System.out.println("3. Exit System");
             System.out.print("Enter 1, 2, or 3: ");
-            Scanner scanner = new Scanner(System.in);
             option = scanner.nextInt();
             switch (option) {
                 case 1:
@@ -26,6 +26,7 @@ public class Main {
                     break;
                 case 2:
                     library.showCheckedOutBooks();
+                    checkInScreen();
                     break;
                 case 3:
                     System.out.println("Thank you for visiting! Have a good day!");
@@ -53,6 +54,29 @@ public class Main {
                     id = scanner.nextInt();
                     scanner.nextLine();
                     library.getBook(id, name);
+                    break;
+                case "X":
+                    homeScreen();
+                    break;
+                default:
+                    System.out.println("Invalid Choice. Try Again.");
+            }
+        } while (!choice.equals("X"));
+    }
+
+    public static void checkInScreen(){
+        Scanner scanner = new Scanner(System.in);
+        String choice;
+        int id;
+        do {
+            System.out.println("Enter C to check in a book by ID or X to exit to home screen: ");
+            choice = scanner.nextLine();
+            switch (choice) {
+                case "C":
+                    System.out.println("Enter ID of book you want to check in: ");
+                    id = scanner.nextInt();
+                    scanner.nextLine();
+                    library.returnBook(id);
                     break;
                 case "X":
                     homeScreen();

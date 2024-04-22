@@ -62,4 +62,12 @@ public class Library {
             }
         }
     }
+
+    public void returnBook(int id){
+        for (Book book: collection){
+            if (id == book.getId()){
+                book.checkIn();
+            }
+        }
+    }
 }
