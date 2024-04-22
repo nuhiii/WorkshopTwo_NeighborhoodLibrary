@@ -61,6 +61,9 @@ public class Library {
                 book.checkOut(name);
             }
         }
+        if (id < 1 || id > 20){
+            System.out.println("Invalid ID");
+        }
     }
 
     public void returnBook(int id){
@@ -68,6 +71,9 @@ public class Library {
             if (id == book.getId()){
                 book.checkIn();
             }
+        }
+        if (id < 1 || id > 20){
+            System.out.println("Invalid ID");
         }
     }
 }
